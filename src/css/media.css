@@ -1,0 +1,318 @@
+@media (max-width: 1200px) {
+  .menu_link {
+    font-size: 13px;
+  }
+  .menu_item {
+    padding-right: 20px;
+  }
+  .promo_header {
+    font-size: 50px;
+  }
+  .advantage_block {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .advantage_descr {
+    width: 300px;
+  }
+  .mobile_item {
+    width: 275px;
+  }
+  .mobile_item_subtitle {
+    font-size: 22px;
+  }
+  .require_list br {
+    display: none;
+  }
+  .footer_links_sub a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu_link {
+    font-size: 10px;
+  }
+  .menu_item {
+    padding-right: 8px;
+  }
+  .subheader_logo img {
+    width: 100%;
+  }
+  .subheader_official {
+    font-size: 11px;
+  }
+  .subheader_phone {
+    font-size: 18px;
+  }
+  .subheader_btn {
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+  }
+  .promo_header {
+    font-size: 38px;
+  }
+  .promo_subheader {
+    font-size: 28px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .advantage_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantage_round {
+    margin-right: 0;
+  }
+  .advantage_descr {
+    width: 300px;
+    margin-top: 20px;
+  }
+  .mobile_item {
+    width: 200px;
+  }
+  .mobile_item_subtitle {
+    font-size: 18px;
+  }
+  .choice {
+    min-height: 800px;
+  }
+  .car img {
+    width: 100%;
+  }
+  .require_title {
+    font-size: 20px;
+  }
+  .require_list li {
+    font-size: 14px;
+  }
+  .require_list li br {
+    display: none;
+  }
+  .require_descr br {
+    display: none;
+  }
+  .footer {
+    /** &_mobile
+			a
+				margin: 0 3px
+				 img
+					width: 90%
+					height: 90%  **/
+  }
+  .footer_div {
+    width: 50%;
+  }
+  .footer_div:nth-child(1) {
+    width: 25%;
+  }
+  .footer_div:nth-child(3) {
+    width: 25%;
+  }
+  .footer_links {
+    width: 330px;
+  }
+  .footer_links_sub a {
+    font-size: 10px;
+  }
+  .footer_links_rus {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    position: fixed;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: 0.6s all;
+    transition: 0.6s all;
+  }
+  .menu_active {
+    left: 0;
+  }
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  .menu_link {
+    font-size: 20px;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: #fff;
+    margin-bottom: 2px;
+    -webkit-transition: 0.6s all;
+    transition: 0.6s all;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+  .subheader_btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 40px;
+  }
+  .subheader_phone {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .promo_header {
+    line-height: 45px;
+  }
+  .mobile_item {
+    width: 200px;
+  }
+  .car img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  nav {
+    height: 30px;
+  }
+  header {
+    height: 30px;
+  }
+  .subheader {
+    height: 60px;
+    top: 30px;
+  }
+  .subheader_official {
+    display: none;
+  }
+  .subheader_logo {
+    margin-top: 17px;
+  }
+  .subheader_phone {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 11px;
+  }
+  .subheader_btn {
+    margin-top: 9px;
+    width: 110px;
+    height: 22px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    font-size: 10px;
+  }
+  .promo {
+    min-height: 400px;
+    padding: 93px 0 35px 0;
+  }
+  .promo_descr {
+    display: none;
+  }
+  .promo_header {
+    font-size: 27px;
+    padding: 0 24px;
+    line-height: 35px;
+  }
+  .promo_subheader {
+    font-size: 19px;
+    margin-top: 33px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+    line-height: 50px;
+  }
+  .menu {
+    width: 85%;
+  }
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 4px 0;
+  }
+  .menu_link {
+    display: block;
+  }
+  .advantage {
+    padding: 22px 0 36px 0;
+  }
+  .advantage_block {
+    margin-top: 26px;
+  }
+  .advantage_round {
+    width: 100px;
+    height: 100px;
+  }
+  .advantage_descr {
+    width: 100%;
+    margin-top: 27px;
+  }
+  .advantage_subtitle {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,456 @@
+@import "variables"
+@import "mixins"
+	
+	
+header
+	position: relative
+
+nav
+	height: 50px
+	background-color: #212121
+
+.hamburger
+	display: none	
+
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 10px 70px
+	margin: 0
+	list-style-type: none
+
+	&_link
+		color: #ffffff
+		font-size: 15px
+		font-weight: 300
+
+	&_item
+		border-right: 2px dotted black
+		padding-right: 28px
+		&:last-child
+			border-right: none
+
+
+.subheader
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+	position: absolute
+	width: 100%
+
+	&_logo
+		display: block
+		margin-top: 11px
+		max-width: 100%
+
+	&_official
+		margin-top: 11px;
+		margin-bottom: 17px
+		opacity: 0.5
+		color: #ffffff
+		font-size: 13px
+		font-weight: 400
+
+	&_call
+		margin-top: 19px
+		text-align: right
+		color: #ffffff
+		font-size: 12px
+		font-weight: 300
+
+	&_phone
+		display: block
+		margin-bottom: 26px
+		text-align: right
+		color: #ffffff
+		font-size: 22px
+		font-weight: 400
+		text-transform: uppercase
+
+	&_btn
+		margin-top: 19px
+		width: 172px
+		height: 46px
+		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #ffffff
+		font-size: 14px
+		font-weight: 400
+		text-transform: uppercase
+		+btn_hover()
+		
+	
+
+.promo
+	min-height: 800px
+	background: url(../img/bg/main.jpg) center (center / cover) no-repeat
+	padding: 150px 0 135px 0
+
+	&_header
+		color: #ffffff
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 60px
+		line-height: 60px
+		margin: 0
+		text-align: center
+
+	&_subheader
+		margin: 0
+		margin-top: 22px
+		color: #ffffff
+		font-size: 36px
+		text-transform: uppercase
+		font-weight: 400
+		line-height: 36px
+		text-align: center
+
+	&_descr
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		line-height: 24px
+		text-align: center
+		margin-top: 23px
+
+	&_btn
+		display: block
+		margin: 118px auto 0 auto
+		width: 259px
+		height: 63px
+		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		line-height: 68px
+		text-transform: uppercase
+	/** 	+btn_hover  **/
+
+.advantage
+	padding: 71px 0 65px 0
+
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 35px
+
+	&_round
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 26px
+		width: 113px
+		height: 113px
+		background-color: #1eacc7
+		border-radius: 100%
+
+	&_descr
+		width: 343px;	
+
+	&_subtitle
+		color: #1eacc7
+		font-size: 17px
+		font-weight: 400
+		
+	&_text
+		color: #202020
+		font-size: 15px
+		font-weight: 300
+		line-height: 21px
+		
+
+.label
+	margin: 0 auto
+	width: 112px
+	height: 24px
+	padding: 6px 12px
+	background: #000
+	color: #ffffff
+	font-size: 11px
+	font-weight: 400
+	text-transform: uppercase
+	text-align: center
+	&_white
+		color: #070716
+		background-color: #ffffff
+
+.title
+	margin-top: 38px
+	margin-bottom: 0
+	color: #222222
+	font-size: 38px
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+	&_white
+		margin-top: 32px
+		color: #ffffff
+	
+.subtitle
+	margin-top: 19px
+	color: #222222
+	font-size: 17px
+	font-weight: 400
+	line-height: 21px
+	text-align: center
+	&_white
+		color: #ffffff
+
+.mobile
+
+	min-height: 864px
+	padding: 48px 80px
+	background: url('../img/bg/mobile_app.png') center (center / cover) no-repeat
+
+	.row
+		margin-top: 32px
+
+	&_item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		padding-top: 92px
+		&1
+			background: url('../img/bg/mobile_screen/1.png') center (center / cover) no-repeat
+		&2
+			background: url('../img/bg/mobile_screen/2.png') center (center / cover) no-repeat
+		&3
+			background: url('../img/bg/mobile_screen/3.png') center (center / cover) no-repeat
+		&4
+			background: url('../img/bg/mobile_screen/4.png') center (center / cover) no-repeat
+		&5
+			background: url('../img/bg/mobile_screen/5.png') center (center / cover) no-repeat
+		&6
+			background: url('../img/bg/mobile_screen/6.png') center (center / cover) no-repeat
+		
+		&_subtitle
+			color: #ffffff
+			font-size: 24px
+			font-weight: 400
+			line-height: 31px
+			text-transform: uppercase
+			text-align: center
+
+		&_plus
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			bottom: 35px  /** марджин снизу **/
+			left: 50%    /** смещение плюса на 50% от всей длины, но он будет не по центру,т.к. уйдёт правее ещё на свою ширину **/
+			transform: translateX(-50%) /** здесь задается смещение блока влево (-) на половину ширины самого блока **/
+			width: 26px
+			height: 26px
+			background-color: #000000
+			margin: 0 auto
+			border-radius: 100%
+			cursor: pointer  /**при нааведении на этот плюс курсор будет меняться **/
+
+			/** ЧТОБЫ НЕ ЗАГРУЖАТЬ КАРТИНКУ С ПЛЮСОМ КАЖЖДЫЙ РАЗ НА СТРАНИЦУ(ЭТО НА ДОЛИ СЕКУНДЫ,НО ВСЁ-ТАКИ УВЕЛИЧИВАЕТ ВРЕМЯ ЗАГРУЗКИ СТРАНИЦЫ), СОЗДАДИМ ЭТОТ ЭЛЕМЕНТ С ПОМОЩЬЮ ПСЕВДОЭЛЕМЕНТОВ  **/
+			&::before  /** горизонтальная полоска плюса **/
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main-color
+				transition: 0.3s all
+			&::after /** вертикальная полоска плюса **/
+				content: ''
+				position: absolute /** закрепляем позицию элемента на странице **/
+				left: 50% /** сдвигаем его влево на 50% **/
+				transform: translateX(-50%) /** затем по оси х двигаем еще влево на половину его ширины**/
+				display: block
+				width: 2px
+				height: 14px
+				background-color: $main-color
+				transition: 0.3s all
+			&:hover
+				&::before, &::after
+					background-color: $second-color
+
+			
+
+.choice
+	position: relative
+	min-height: 864px
+	padding: 57px 0 138px 0
+	background: url('../img/bg_choice.jpg') center (center / cover) no-repeat
+	.car
+		img
+			position: relative
+			display: block
+			margin: 57px auto 0 auto
+			z-index: 2	
+
+	.car_text
+		margin-top: 4px
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		text-align: center
+
+.require
+	padding: 68px 0 84px 0
+
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0px
+
+	&_title
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+
+		li 
+			position: relative
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&::before
+				content: ''
+				display: block 
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url('../icons/check_blue.png') center (center / cover) no-repeat
+
+	&_descr
+		color: #1ca8c3
+		font-weight: 300
+
+	.warning
+		.require_title
+			color: $second-color
+		.require_list
+			li 
+				&::before
+					background: url('../icons/check_red.png') center (center / cover) no-repeat
+
+.world
+	position: relative
+	padding: 49px 0
+	min-height: 717px
+	background: url('../img/world.jpg') center (center / cover) no-repeat
+	&_link 
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 49px
+		color: #1fbad6
+		font-size: 15px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: center
+		&:hover 
+			text-decoration: none
+			color: #fff
+			
+
+footer
+	padding: 14px 23px 39px 23px
+	a 
+		&:hover 
+			text-decoration: none
+
+.footer
+
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
+		display: flex /** указываем,что контейнер wrapper-это флекс-контейнер **/
+		justify-content: space-between /** выравнивание по главной оси (оси х по умолчанию) - расположение в нем элементов - первый блок в начале строки, последний-в конце, остальные блоки - между ними на одинаковом расстоянии друг от друга **/
+		align-items: flex-start /** выравнивание элементов по поперечной оси - элементы прижаты к началу оси **/
+		padding-top: 32px
+	&_div
+		display: flex
+		width: 33%	
+		&:nth-child(3)
+			justify-content: flex-end
+
+	&_social 
+		width: 160px /** иконки с соцсетями 4 шт по 32рх и расстоянием между ними 8рх **/
+		display: flex
+		justify-content: start /** первый эл-т привязан к началу, последний - к концу, расстояние между эл-тами равное **/
+		&_item 
+			display: flex 
+			justify-content: center /** блоки располагаются в центре главной оси **/
+			align-items: center /** блоки располагаются в центре поперечной оси **/
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100% /** черный кружочек, на фоне которого будет иконка **/
+			color: #fff
+	
+	&_links
+		width: 390px
+		margin: 0 auto 
+
+		&_main
+			display: flex
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+				// text-align: center
+		&_sub
+			display: flex
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+				text-align: center
+		&_rus
+			display: block
+			margin: 0 auto 
+			color: red
+			font-size: 11px
+			font-weight: 400
+			text-transform: uppercase
+			text-align: center
+
+	&_mobile
+		display: flex
+		justify-content: flex-end
+		color: #ffffff
+		/** font-size: 15px **/
+		font-weight: 300px
+		margin-top: 4px
+		&:hover
+			text-decoration: none
+			color: $main-color
+		a 
+			/** margin-right: 7px **/
+			img 		
+				height: 27px
+				width: 94px
+		
+.xs-visible 
+		display: none
